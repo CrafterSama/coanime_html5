@@ -1,0 +1,161 @@
+a
+{
+	color: #f90;
+	text-decoration: none;
+}
+body
+{
+	background: #efefef;
+	color: #4c4c4c;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0;
+}
+header
+{
+	background: #434343;
+	color: white;
+	margin: 0;
+	padding: 0.5em;
+}
+header figure, header h1
+{
+	display: inline-block;
+	vertical-align: top;
+}
+header #logo img
+{
+	width: 50%;
+}
+header #titulo_header
+{
+	font-size: 20px;
+	font-weight: normal;
+	margin: 1em 1em 0 1em;
+	width: 50%;
+}
+header #user_avatar
+{
+	border-radius: 0.3em;
+	float: right;
+	margin: 1em 1em 0 0;
+	padding: 0;
+}
+header #user_avatar figcaption
+{
+	border-bottom-right-radius: 0.3em;
+	border-top-right-radius: 0.3em;
+	background: #f90;
+	float: right;
+	height: 50px;
+	padding: 0 2px;
+}
+header #user_avatar img
+{
+	border-bottom-left-radius: 0.3em;
+	border-top-left-radius: 0.3em;
+	width: 50px;
+}
+nav
+{
+	background: rgb(119, 184, 0);
+	font-size: 0.9em;
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1.2em 0 0;
+	vertical-align: top;
+}
+nav ul li a
+{
+	color: white;
+	display: block;
+	padding: 0.2em 0;
+	text-decoration: none;
+}
+nav ul li a:hover
+{
+	text-decoration: underline;
+}
+nav #adminweb
+{
+	float: right;
+	margin-right: 0;
+}
+nav #adminweb a
+{
+	background: #f90;
+	padding: 0.2em 1em 0.2em 0.5em;
+	text-decoration: none;
+}
+nav #home
+{
+	float: left;
+	margin-left: 0;
+}
+nav #home a
+{
+	background: #f90;
+	padding: 0.2em 1em;
+	text-decoration: none;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .post
+{
+	background: white;
+	border-bottom: 3px solid #f80;
+	border-radius: 0.3em;
+	padding: 1em;
+}
+#contenido .post .post_autor
+{
+
+}
+#contenido .post p
+{
+	color: #7a7a7a;
+	font-size: 0.9em;
+}
+#contenido .post .post_paragraph
+{
+	text-align: justify;
+}
+#contenido .post .post_datos .post_tags
+{
+	background: rgb(119, 184, 0);
+	border-radius: 0.3em;
+	color: white;
+	font-weight: bold;
+	padding: 0.2em 0.5em;
+}
+#contenido .post .post_image
+{
+	float: left;
+	margin:0 1em 0 0;
+}
+#contenido .post .post_image img
+{
+	width: 130px;
+}
+#contenido .post .post_title
+{
+	font-size: 1em;
+	font-style: italic;
+	margin-top: 0;
+	padding:0 0.5em 0 0.5em;
+}
+#contenido .post .post_title a
+{
+	color:#444;
+	text-decoration: none;
+}

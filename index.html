@@ -2,20 +2,56 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8" />
-	<title>Coanime.net - Tu Comunidad Manga/Anime</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Coanime.net - Tu Fuente de Informacion sobre Manga, Anime, Video Juegos, Tecnologia y Cultura Otaku</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
 	<header>
-		<figure>
-			<img src="logo.png" alt="" />
+		<figure id="logo">
+			<img src="img/logo.png" alt="" />
 		</figure>
-		<h1>Coanime.net - Tu Comunidad Manga/Anime</h1>
-		<figure>
-			<img src="avatar.jpg" alt="" />
+		<figure id="user_avatar">
+			<img src="img/avatars/avatar.jpg" alt="" />
 			<figcaption>
 				*
 			</figcaption>
 		</figure>
 	</header>
+	<nav>
+		<ul>
+			<li id="home"><a href="#">*</a></li>
+			<li><a href="#">Enciclopedia</a></li>
+			<li><a href="#">Eventos</a></li>
+			<li id="adminweb"><a href="#">Administrar Web</a></li>
+		</ul>
+	</nav>
+	<section id="contenido">
+		<article class="post">
+			<figure class="post_image">
+				<a href=""><img src="img/posts_images/post_image.jpg" alt="" /></a>
+			</figure>
+			<h2 class="post_title">
+				<a href="#">Nueva adaptacion al Anime Joujuu Senjin!! Mushibugyo</a>
+			</h2>
+			<p class="post_autor">
+				Por <a href="#">Julmer Olivero</a>
+			</p>
+			<p class="post_paragraph">
+				De acuerdo a las publicaciones de la Revista Semanal ~Shūkan Shōnen Sunday, se adaptara al Anime el Manga de Accion y Fantasia que viene de la Mano de Fukuda Hiroshi llamado ~Joujuu Senjin!! Mushibugyo, actualmente esta en Edicion y pronto se dara mas informacion Al respecto en la Web del Anime o Productora.
+			</p>
+			<p class="post_datos">
+				<a class="post_tags" href="#">Anime</a>
+				<span class="post_date">Hace <strong>5</strong> min</span>
+				<a class="post_stars" href="#">355</a>
+				<a class="save_stars" href="#">*</a>
+			</p>
+		</article>
+	</section>
+	<footer>
+		<p>Powered by Coanime Estudios®</p>
+		<p>Coanime.net 2013</p>
+	</footer>
 </body>
 </html>
