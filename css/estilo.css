@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a
 {
 	color: #f90;
@@ -11,9 +21,25 @@ body
 	font-size: 16px;
 	margin: 0;
 }
+footer 
+{
+	background: #000;
+	color: white;
+	font-weight: bold;
+	padding: 1em;
+	text-align: center;
+}
+footer p#powerby:after
+{
+	-webkit-font-smoothing: antialiased;
+	content:" \e0ff";
+	font-family: "icomoon";
+	font-size: 2em;
+	opacity: 1;
+}
 header
 {
-	background: #434343;
+	background: url(../img/banners/banner.jpg) no-repeat center;
 	color: white;
 	margin: 0;
 	padding: 0.5em;
@@ -33,7 +59,9 @@ header h1
 header #user_avatar
 {
 	float: right;
-	margin: 1em 0.7em 0 0;
+	margin: 2em 0.7em 0 0;
+	border-radius: 0.3em;
+	box-shadow: 0 0 2px #000;
 }
 header #user_avatar figcaption
 {
@@ -43,6 +71,14 @@ header #user_avatar figcaption
 	float: right;
 	height: 50px;
 	padding: 0 2px;
+}
+header #user_avatar #user_options:after
+{
+	-webkit-font-smoothing: antialiased;
+	content:"\e015";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.8;
 }
 header #user_avatar img
 {
@@ -83,6 +119,14 @@ nav ul li a
 	padding: 0.2em 0;
 	text-decoration: none;
 }
+nav ul #home a:after
+{
+	-webkit-font-smoothing: antialiased;
+	content:"\e046";
+	font-family: "icomoon";
+	font-size: 0.9em;
+	opacity: 0.8;
+} 
 nav ul li a:hover
 {
 	text-decoration: underline;
@@ -129,17 +173,48 @@ nav #home a
 	color: #7a7a7a;
 	font-size: 0.9em;
 }
-#contenido .post .post_paragraph
+#contenido .post .post_datos
 {
-	text-align: justify;
+	text-align: right;
+}
+#contenido .post .post_datos a.post_tags,#contenido .post .post_datos span.post_date,
+#contenido .post .post_datos a.post_stars, #contenido .post .post_datos a.save_stars
+{
+
 }
 #contenido .post .post_datos .post_tags
 {
-	background: rgb(119, 184, 0);
+	background: rgb(120, 185, 0);
+	border-bottom: 2px solid rgb(170, 255, 0);
 	border-radius: 0.3em;
 	color: white;
 	font-weight: bold;
+	float: left;
 	padding: 0.2em 0.5em;
+}
+#contenido .post .post_datos .post_stars
+{
+	background: #474747;
+	border-bottom: 2px solid #878787;
+	border-radius: 0.3em;
+	color: white;
+	font-weight: bold;
+	margin: 0 0 0 2em;
+	padding: 0.2em 0.5em;
+}
+#contenido .post .post_datos .save_stars:after
+{
+	-webkit-font-smoothing: antialiased;
+	color: #F85;
+	content:"\e066";
+	font-family: "icomoon";
+	font-size: 1.2em;
+	margin: 0 1em;
+	opacity: 0.8;
+	position: relative;
+	text-shadow: 1px 1px 1px #474747;
+	
+	
 }
 #contenido .post .post_image
 {
@@ -149,6 +224,10 @@ nav #home a
 #contenido .post .post_image img
 {
 	width: 130px;
+}
+#contenido .post .post_paragraph
+{
+	text-align: justify;
 }
 #contenido .post .post_title
 {
