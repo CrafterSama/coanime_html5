@@ -21,20 +21,19 @@ body
 	font-size: 16px;
 	margin: 0;
 }
-footer 
+footer
 {
 	background: #000;
 	color: white;
-	font-weight: bold;
 	padding: 1em;
 	text-align: center;
 }
-footer p#powerby:after
+footer #powerby:after
 {
 	-webkit-font-smoothing: antialiased;
 	content:" \e0ff";
 	font-family: "icomoon";
-	font-size: 2em;
+	font-size: 1em;
 	opacity: 1;
 }
 header
@@ -58,10 +57,11 @@ header h1
 }
 header #user_avatar
 {
-	float: right;
-	margin: 2em 0.7em 0 0;
+	background: #ccc;
 	border-radius: 0.3em;
 	box-shadow: 0 0 2px #000;
+	float: right;
+	margin: 2em 0.7em 0 0;
 }
 header #user_avatar figcaption
 {
@@ -72,20 +72,25 @@ header #user_avatar figcaption
 	height: 50px;
 	padding: 0 2px;
 }
+header #user_avatar a img
+{
+	border-bottom-left-radius: 0.3em;
+	border-top-left-radius: 0.3em;
+	/*color: #878787;
+	content: "\e12e";*/
+	float: left;
+	/*font-family: "icomoon";
+	font-size: 40px;
+	text-align: center;*/
+	width: 50px;
+}
 header #user_avatar #user_options:after
 {
 	-webkit-font-smoothing: antialiased;
 	content:"\e015";
 	font-family: "icomoon";
 	font-size: 0.7em;
-	opacity: 0.8;
-}
-header #user_avatar img
-{
-	border-bottom-left-radius: 0.3em;
-	border-top-left-radius: 0.3em;
-	float: left;
-	width: 50px;
+	opacity: 0.9;
 }
 header #logo
 {
@@ -109,59 +114,61 @@ nav ul
 nav ul li
 {
 	display: inline-block;
-	margin: 0 1.2em 0 0;
+	margin: 0 1em 0 0;
+	padding: 5px 0;
 	vertical-align: top;
 }
 nav ul li a
 {
 	color: white;
-	display: block;
-	padding: 0.2em 0;
 	text-decoration: none;
 }
-nav ul #home a:after
-{
-	-webkit-font-smoothing: antialiased;
-	content:"\e046";
-	font-family: "icomoon";
-	font-size: 0.9em;
-	opacity: 0.8;
-} 
 nav ul li a:hover
 {
-	text-decoration: underline;
+
 }
-nav #adminweb
+nav ul #adminweb
 {
 	float: right;
 	margin-right: 0;
 }
-nav #adminweb a
+nav ul #adminweb a:after
 {
-	background: #f90;
-	padding: 0.2em 1em 0.2em 0.5em;
-	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	content:"\e04b";
+	font-family: "icomoon";
+	font-size: 0.9em;
+	margin: 0 0 0 1em;
+	opacity: 0.9;
 }
-nav #home
+nav ul #adminweb, nav ul #home
+{
+	background: #F90;
+	padding: 5px 0.9em 5px 0.9em;
+}
+nav ul #home
 {
 	float: left;
 	margin-left: 0;
 }
-nav #home a
+nav ul #home a:after
 {
-	background: #f90;
-	padding: 0.2em 1em;
-	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	content:"\e048";
+	font-family: "icomoon";
+	font-size: 0.9em;
+	opacity: 0.9;
 }
 #contenido
 {
-	margin: 1em;
+	margin: 0.5em;
 }
 #contenido .post
 {
 	background: white;
 	border-bottom: 3px solid #f80;
 	border-radius: 0.3em;
+	margin: 0 0 1em 0;
 	padding: 1em;
 }
 #contenido .post .post_autor
@@ -199,7 +206,7 @@ nav #home a
 	border-radius: 0.3em;
 	color: white;
 	font-weight: bold;
-	margin: 0 0 0 2em;
+	margin: 0 0 0 1em;
 	padding: 0.2em 0.5em;
 }
 #contenido .post .post_datos .save_stars:after
@@ -213,17 +220,17 @@ nav #home a
 	opacity: 0.8;
 	position: relative;
 	text-shadow: 1px 1px 1px #474747;
-	
-	
 }
 #contenido .post .post_image
 {
+	border: 1px solid #ccc;
 	float: left;
-	margin:0 1em 0 0;
+	margin: 0 1em 0 0;
+	padding: 3px;
 }
-#contenido .post .post_image img
+#contenido .post .post_image a img
 {
-	width: 130px;
+	width: 140px;
 }
 #contenido .post .post_paragraph
 {
