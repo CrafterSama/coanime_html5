@@ -20,15 +20,19 @@
 	{
 		border-radius: 5px;
 	}
-	nav ul #home a
+	nav ul #home
 	{
 		border-bottom-left-radius: 5px;
 		border-top-left-radius: 5px;
 	}
-	nav ul #adminweb a
+	nav ul #adminweb
 	{
 		border-bottom-right-radius: 5px;
 		border-top-right-radius: 5px;
+	}
+	#contenido
+	{
+		margin: 0.5em 0.5em 0.5em 0;
 	}
 }
 
