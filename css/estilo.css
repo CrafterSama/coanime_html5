@@ -114,7 +114,7 @@ nav ul
 nav ul li
 {
 	display: inline-block;
-	margin: 0 1em 0 0;
+	margin: 0 0.9em 0 0;
 	padding: 5px 0;
 	vertical-align: top;
 }
@@ -162,6 +162,47 @@ nav ul #home a:after
 #bienvenida
 {
 	display: none;
+}
+#bienvenida h3,
+{
+	color: #878787;
+	text-align: center;
+}
+#bienvenida p
+{
+	font-size: 0.9em;
+}
+#bienvenida p, #bienvenida #mensaje_registro
+{
+	text-align: center;
+}
+#bienvenida #mensaje_registro
+{
+	border-bottom: 3px solid #ccc;
+	border-radius: 5px;
+	display: block;
+	font-size: 0.8em;
+	padding-bottom: 0.5em;
+}
+#bienvenida #registro
+{
+	background: #F90;
+	border-bottom: 2px solid #FB0;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	padding: 0.5em 0.2em;
+	text-align: center;
+}
+#bienvenida #titulo_aside
+{
+	background: rgb(120, 180, 0);
+	border-bottom: 2px solid rgb(130, 150, 0);
+	border-radius: 5px;
+	color: white;
+	display: block;
+	padding: 0.5em 0.2em;
+	text-align: center;
 }
 #contenido
 {

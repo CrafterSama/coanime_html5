@@ -36,33 +36,6 @@
 		margin-right: 0.5em;
 		width: 27.5%;
 	}
-	#bienvenida h2
-	{
-		color: #878787;
-		text-align: center;
-	}
-	#bienvenida p, #bienvenida #mensaje_registro
-	{
-		text-align: center;
-	}
-	#bienvenida #mensaje_registro
-	{
-		border-bottom: 3px solid #ccc;
-		border-radius: 5px;
-		display: block;
-		font-size: 0.8em;
-		padding-bottom: 0.5em;
-	}
-	#bienvenida #registro
-	{
-		background: #F90;
-		border-bottom: 2px solid #FB0;
-		border-radius: 5px;
-		color: white;
-		display: block;
-		padding: 0.5em 0.2em;
-		text-align: center;
-	}
 	#contenido
 	{
 		width: 70%;
