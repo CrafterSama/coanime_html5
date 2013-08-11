@@ -15,7 +15,7 @@ a
 }
 body
 {
-	background: #efefef;
+	background: #000000 url(http://www.coanime.net/images/bg_ca.jpg) no-repeat top center fixed;
 	color: #4c4c4c;
 	font-family: Arial;
 	font-size: 16px;
@@ -23,7 +23,7 @@ body
 }
 footer
 {
-	background: #000;
+	background: #878787;
 	color: white;
 	padding: 1em;
 	text-align: center;
@@ -65,9 +65,9 @@ header #user_avatar
 }
 header #user_avatar figcaption
 {
+	background: #f90;
 	border-bottom-right-radius: 0.3em;
 	border-top-right-radius: 0.3em;
-	background: #f90;
 	float: right;
 	height: 50px;
 	padding: 0 2px;
@@ -159,6 +159,10 @@ nav ul #home a:after
 	font-size: 0.9em;
 	opacity: 0.9;
 }
+#bienvenida
+{
+	display: none;
+}
 #contenido
 {
 	margin: 0.5em;
@@ -192,11 +196,11 @@ nav ul #home a:after
 #contenido .post .post_datos .post_tags
 {
 	background: rgb(120, 185, 0);
-	border-bottom: 2px solid rgb(170, 255, 0);
+	border-bottom: 2px solid rgb(170, 190, 90);
 	border-radius: 0.3em;
 	color: white;
-	font-weight: bold;
 	float: left;
+	font-weight: bold;
 	padding: 0.2em 0.5em;
 }
 #contenido .post .post_datos .post_stars
@@ -225,12 +229,15 @@ nav ul #home a:after
 {
 	border: 1px solid #ccc;
 	float: left;
+	/*height: 140px;*/
 	margin: 0 1em 0 0;
 	padding: 3px;
+	width: 100px;
 }
 #contenido .post .post_image a img
 {
-	width: 140px;
+	/*height: 170px;*/
+	width: 100%;
 }
 #contenido .post .post_paragraph
 {
@@ -247,4 +254,46 @@ nav ul #home a:after
 {
 	color:#444;
 	text-decoration: none;
+}
+#social_buttons
+{
+	display: none;
+}
+#social_buttons #twitter:after
+{
+	color: #13BAEA;
+	content: "\e0a0";
+	font-family: "icomoon";
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #474747;
+}
+#social_buttons #facebook:after
+{
+	color: #2664BF;
+	content: "\e09d";
+	font-family: "icomoon";
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #474747;
+}
+#social_buttons #gplus:after
+{
+	color: #C83F11;
+	content: "\e099";
+	font-family: "icomoon";
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #474747;
+}
+#social_buttons #suscribete:after
+{
+	content: "\e094";
+	font-family: "icomoon";
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #474747;
+}
+#wrapper
+{
+	background: #EFEFEF;
+	border-radius: 0.3em;
+	padding-bottom: 0.2em;
+	margin-bottom: 0.5em;
 }

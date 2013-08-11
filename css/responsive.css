@@ -1,11 +1,96 @@
+@media screen and (max-width: 319px){
+	header #user_avatar,
+	nav ul #enciclopedia,
+	nav ul #eventos,
+	nav ul #home,
+	nav ul #adminweb,
+	#contenido .post .post_autor,
+	#contenido .post .post_date,
+	#contenido .post .post_image,
+	#contenido .post .post_paragraph
+	{
+		display: none;
+	}
+	#contenido .post
+	{
+		padding: 0.5em;
+	}
+	#contenido .post .post_datos,
+	#contenido .post .post_datos .post_tags,
+	#contenido .post .post_datos .post_stars,
+	#contenido .post .post_title a
+	{
+		font-size: 0.9em;
+	}
+}
 @media screen and (min-width: 768px){
 	body
 	{
 		margin: 0 auto;
 		max-width: 1020px;
 	}
+	#bienvenida
+	{
+		display: block;
+		float: right;
+		margin-right: 0.5em;
+		width: 27.5%;
+	}
+	#bienvenida h2
+	{
+		color: #878787;
+		text-align: center;
+	}
+	#bienvenida p, #bienvenida #mensaje_registro
+	{
+		text-align: center;
+	}
+	#bienvenida #mensaje_registro
+	{
+		border-bottom: 3px solid #ccc;
+		border-radius: 5px;
+		display: block;
+		font-size: 0.8em;
+		padding-bottom: 0.5em;
+	}
+	#bienvenida #registro
+	{
+		background: #F90;
+		border-bottom: 2px solid #FB0;
+		border-radius: 5px;
+		color: white;
+		display: block;
+		padding: 0.5em 0.2em;
+		text-align: center;
+	}
+	#contenido
+	{
+		width: 70%;
+	}
+	#social_buttons
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	#social_buttons a
+	{
+		display: inline-block;
+		margin-right: 0.2em;
+		padding: 0.3em;
+		text-align: center;
+		vertical-align: top;
+	}
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1019px){
+	#bienvenida
+	{
+		display: block;
+		float: right;
+		width: 26%;
+	}
+}
+/* Responsive a partir de 1020px */
 @media only screen and (min-width: 1020px){
 	footer
 	{
@@ -22,17 +107,11 @@
 	}
 	nav ul #home
 	{
-		border-bottom-left-radius: 5px;
 		border-top-left-radius: 5px;
 	}
 	nav ul #adminweb
 	{
-		border-bottom-right-radius: 5px;
 		border-top-right-radius: 5px;
-	}
-	#contenido
-	{
-		margin: 0.5em 0.5em 0.5em 0;
 	}
 }
 
