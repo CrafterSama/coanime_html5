@@ -20,6 +20,7 @@
 		</figure>
 	</header>
 	<section id="wrapper">
+		<section id="results"></section>
 		<nav>
 			<ul>
 				<li id="home"><a href="#"></a></li>
@@ -44,7 +45,7 @@
 		<section id="contenido">
 			<article class="post">
 				<figure class="post_image">
-					<a href="http://media.coanime.net/images/20130121mu.jpg"><img src="http://media.coanime.net/images/20130121mu.jpg" alt="" /></a>
+					<a href="http://images.coanime.net/images/20130121mu.jpg"><img src="http://images.coanime.net/images/20130121mu.jpg" alt="" /></a>
 				</figure>
 				<h2 class="post_title">
 					<a href="#">Nueva adaptacion al Anime Joujuu Senjin!! Mushibugyo</a>
@@ -64,7 +65,7 @@
 			</article>
 			<article class="post">
 				<figure class="post_image">
-					<a href="http://media.coanime.net/images/conanen.jpg"><img src="http://media.coanime.net/images/conanen.jpg" alt="" /></a>
+					<a href="http://images.coanime.net/images/conanen.jpg"><img src="http://images.coanime.net/images/conanen.jpg" alt="" /></a>
 				</figure>
 				<h2 class="post_title">
 					<a href="#">Nueva Expansion para Age Of Conan</a>
@@ -84,7 +85,7 @@
 			</article>
 			<article class="post">
 				<figure class="post_image">
-					<a href="http://media.coanime.net/images/japanesecl.jpg"><img src="http://media.coanime.net/images/japanesecl.jpg" alt="" /></a>
+					<a href="http://images.coanime.net/images/japanesecl.jpg"><img src="http://images.coanime.net/images/japanesecl.jpg" alt="" /></a>
 				</figure>
 				<h2 class="post_title">
 					<a href="#">El Timbre de las Escuelas Japonesas</a>
@@ -104,7 +105,7 @@
 			</article>
 					<article class="post">
 				<figure class="post_image">
-					<a href="http://media.coanime.net/images/20130121mu.jpg"><img src="http://media.coanime.net/images/20130121mu.jpg" alt="" /></a>
+					<a href="http://images.coanime.net/images/20130121mu.jpg"><img src="http://images.coanime.net/images/20130121mu.jpg" alt="" /></a>
 				</figure>
 				<h2 class="post_title">
 					<a href="#">Nueva adaptacion al Anime Joujuu Senjin!! Mushibugyo</a>
@@ -124,11 +125,11 @@
 			</article>
 			<article class="post">
 				<figure class="post_image">
-					<a href="http://media.coanime.net/images/conanen.jpg"><img src="http://media.coanime.net/images/conanen.jpg" alt="" /></a>
+					<a href="http://images.coanime.net/images/conanen.jpg"><img src="http://images.coanime.net/images/conanen.jpg" alt="" /></a>
 				</figure>
-				<h2 class="post_title">
+				<h3 class="post_title">
 					<a href="#">Nueva Expansion para Age Of Conan</a>
-				</h2>
+				</h3>
 				<p class="post_autor">
 					Por <a href="#">Julmer Olivero</a>
 				</p>
@@ -144,7 +145,7 @@
 			</article>
 			<article class="post">
 				<figure class="post_image">
-					<a href="http://media.coanime.net/images/japanesecl.jpg"><img src="http://media.coanime.net/images/japanesecl.jpg" alt="" /></a>
+					<a href="http://images.coanime.net/images/japanesecl.jpg"><img src="http://images.coanime.net/images/japanesecl.jpg" alt="" /></a>
 				</figure>
 				<h2 class="post_title">
 					<a href="#">El Timbre de las Escuelas Japonesas</a>
@@ -170,6 +171,29 @@
 	</footer>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="/js/commons.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+			url: 'http://coanime.rd/backend/posts.php',
+			data: { id: 262 },
+			dataType: 'json',
+			success: function(datos){
+				if(datos){
+					make_item_rows(datos);
+				}else{
+					alert("Hay algo mal en el Resultado");
+				}
+			}
+		});
+		function make_item_rows(datos){
+			var string_buffer = "";
+			$.each(jQuery.parseJSON(datos), function(index, value){
+				string_buffer += value.item_id; //adding many more eventually
+				$(string_buffer).appendTo('#results');
+				string_buffer = ""; //reset buffer after writing
+			});
+		}
+	</script>
+
+	<script src="/js/common.js"></script>
 </body>
 </html>

@@ -1,4 +1,16 @@
-@font-face {
+/***********************************************************************
+ * Coanime.net 2.0
+ * ---------------------------------------------------------------------
+ * File: estilo.css
+ * Author: Julmer Olivero <jolivero.03@gmail.com>
+ * Licence: GPLv3 - http://www.gnu.org/licenses/gpl.txt
+ * ---------------------------------------------------------------------
+ * EL archivo estilo.css ( Estilos ) guarda todo el diseño a traves de 
+ * el lenguaje de hojas de estilo en cascada, aca se le da forma al HTML
+ **********************************************************************/
+
+@font-face 
+{
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot');
 	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
@@ -23,9 +35,9 @@ body
 }
 footer
 {
-	background: #878787;
+	background: #222222;
 	color: white;
-	padding: 1em;
+	padding: 0.5em;
 	text-align: center;
 }
 footer #powerby:after
